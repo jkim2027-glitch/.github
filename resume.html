@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,95 +23,70 @@
 
     <main>
         <section class="page-header">
-            <h1>Resume & Experience</h1>
-            <p>Education, skills, and professional experience</p>
+            <div class="container">
+                <h1>Resume & Experience</h1>
+                <p class="header-subtitle">Education, skills, and professional journey</p>
+            </div>
         </section>
 
         <section class="resume-section">
             <div class="container">
-                <!-- Professional Summary -->
-                <div class="resume-card">
+                <div class="resume-block">
                     <h2>Professional Summary</h2>
-                    <p>
-                        [Write a brief 2-3 sentence summary of who you are as a professional, 
-                        your core strengths, and what you're passionate about.]
-                    </p>
+                    <p>[Write a brief summary of who you are as a professional, your core strengths, and what you're passionate about.]</p>
                 </div>
 
-                <!-- Education -->
-                <div class="resume-card">
+                <div class="resume-block">
                     <h2>Education</h2>
                     <div class="resume-item">
-                        <div class="resume-header">
+                        <div class="item-header">
                             <h3>[School/University Name]</h3>
-                            <span class="date">[Graduation Year or Expected Graduation]</span>
+                            <span class="item-date">[Year]</span>
                         </div>
-                        <p class="degree">[Degree Type] in [Major/Field of Study]</p>
-                        <p class="details">[Relevant coursework, GPA, honors, or achievements]</p>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h3>[Additional Education/Certification]</h3>
-                            <span class="date">[Year]</span>
-                        </div>
-                        <p class="degree">[Certification or Program Name]</p>
-                        <p class="details">[Details about the program or certification]</p>
+                        <p class="item-subtitle">[Degree Type] in [Major/Field of Study]</p>
+                        <p class="item-detail">[Relevant coursework, GPA, honors, or achievements]</p>
                     </div>
                 </div>
 
-                <!-- Technical Skills -->
-                <div class="resume-card">
+                <div class="resume-block">
                     <h2>Technical Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
+                    <div class="skills-container">
+                        <div class="skill-item">
                             <h4>Programming Languages</h4>
-                            <p>JavaScript, Python, Java, C++, [Add more...]</p>
+                            <p>JavaScript, Python, Java, C++</p>
                         </div>
-                        <div class="skill-category">
-                            <h4>Frontend Technologies</h4>
-                            <p>HTML5, CSS3, React, Vue.js, [Add more...]</p>
+                        <div class="skill-item">
+                            <h4>Frontend</h4>
+                            <p>HTML5, CSS3, React, Vue.js</p>
                         </div>
-                        <div class="skill-category">
-                            <h4>Backend Technologies</h4>
-                            <p>Node.js, Express, Django, [Add more...]</p>
+                        <div class="skill-item">
+                            <h4>Backend</h4>
+                            <p>Node.js, Express, Django</p>
                         </div>
-                        <div class="skill-category">
+                        <div class="skill-item">
                             <h4>Databases</h4>
-                            <p>MySQL, MongoDB, PostgreSQL, [Add more...]</p>
+                            <p>MySQL, MongoDB, PostgreSQL</p>
                         </div>
-                        <div class="skill-category">
-                            <h4>Tools & Platforms</h4>
-                            <p>Git, GitHub, Docker, AWS, [Add more...]</p>
+                        <div class="skill-item">
+                            <h4>Tools</h4>
+                            <p>Git, GitHub, Docker, AWS</p>
                         </div>
-                        <div class="skill-category">
-                            <h4>Other Skills</h4>
-                            <p>Agile, REST APIs, Problem Solving, [Add more...]</p>
+                        <div class="skill-item">
+                            <h4>Other</h4>
+                            <p>Problem Solving, Agile, REST APIs</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Professional Experience -->
-                <div class="resume-card">
+                <div class="resume-block">
                     <h2>Professional Experience</h2>
                     <div class="resume-item">
-                        <div class="resume-header">
+                        <div class="item-header">
                             <h3>[Job Title]</h3>
-                            <span class="date">[Start Date] - [End Date]</span>
+                            <span class="item-date">[Start Date] - [End Date]</span>
                         </div>
-                        <p class="company">[Company Name]</p>
-                        <ul>
-                            <li>[Key responsibility or achievement]</li>
-                            <li>[Key responsibility or achievement]</li>
-                            <li>[Key responsibility or achievement]</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h3>[Job Title]</h3>
-                            <span class="date">[Start Date] - [End Date]</span>
-                        </div>
-                        <p class="company">[Company Name]</p>
-                        <ul>
+                        <p class="item-subtitle">[Company Name]</p>
+                        <ul class="item-list">
                             <li>[Key responsibility or achievement]</li>
                             <li>[Key responsibility or achievement]</li>
                             <li>[Key responsibility or achievement]</li>
@@ -118,59 +94,35 @@
                     </div>
                 </div>
 
-                <!-- Leadership & Activities -->
-                <div class="resume-card">
+                <div class="resume-block">
                     <h2>Leadership & Activities</h2>
                     <div class="resume-item">
-                        <h3>[Leadership Position or Activity]</h3>
-                        <p class="company">[Organization or Club Name]</p>
-                        <ul>
-                            <li>[Achievement or contribution]</li>
-                            <li>[Achievement or contribution]</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h3>[Leadership Position or Activity]</h3>
-                        <p class="company">[Organization or Club Name]</p>
-                        <ul>
+                        <h3>[Leadership Position]</h3>
+                        <p class="item-subtitle">[Organization Name]</p>
+                        <ul class="item-list">
                             <li>[Achievement or contribution]</li>
                             <li>[Achievement or contribution]</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Volunteer Work -->
-                <div class="resume-card">
+                <div class="resume-block">
                     <h2>Volunteer Work</h2>
                     <div class="resume-item">
-                        <div class="resume-header">
+                        <div class="item-header">
                             <h3>[Volunteer Role]</h3>
-                            <span class="date">[Start Date] - [End Date]</span>
+                            <span class="item-date">[Start Date] - [End Date]</span>
                         </div>
-                        <p class="company">[Organization Name]</p>
-                        <p class="details">
-                            [Description of volunteer work and impact made]
-                        </p>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h3>[Volunteer Role]</h3>
-                            <span class="date">[Start Date] - [End Date]</span>
-                        </div>
-                        <p class="company">[Organization Name]</p>
-                        <p class="details">
-                            [Description of volunteer work and impact made]
-                        </p>
+                        <p class="item-subtitle">[Organization Name]</p>
+                        <p class="item-detail">[Description of volunteer work and impact made]</p>
                     </div>
                 </div>
 
-                <!-- Certifications -->
-                <div class="resume-card">
+                <div class="resume-block">
                     <h2>Certifications & Awards</h2>
-                    <ul>
-                        <li>[Certification or Award Name] - [Issuing Organization] ([Year])</li>
-                        <li>[Certification or Award Name] - [Issuing Organization] ([Year])</li>
-                        <li>[Certification or Award Name] - [Issuing Organization] ([Year])</li>
+                    <ul class="item-list">
+                        <li>[Certification or Award Name] - [Organization] ([Year])</li>
+                        <li>[Certification or Award Name] - [Organization] ([Year])</li>
                     </ul>
                 </div>
             </div>
@@ -178,7 +130,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        <p>© 2026 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
