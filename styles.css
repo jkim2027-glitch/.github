@@ -197,6 +197,19 @@ body {
     padding: 80px 24px;
     text-align: center;
     border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(231, 76, 60, 0.6);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .page-header h1 {
@@ -205,12 +218,16 @@ body {
     color: #2a2a2a;
     margin-bottom: 8px;
     letter-spacing: -1px;
+    position: relative;
+    z-index: 2;
 }
 
 .header-subtitle {
     font-size: 16px;
     color: #888;
     font-weight: 300;
+    position: relative;
+    z-index: 2;
 }
 
 /* ============================================
