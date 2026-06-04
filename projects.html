@@ -1,212 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .project-card {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .project-image {
-            width: 100%;
-            height: 500px;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #f5f5f5;
-        }
-
-        .project-image iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">Portfolio</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Me</a></li>
-                <li><a href="projects.html" class="nav-link active">Projects</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
-                <li><a href="reflection.html" class="nav-link">Reflection</a></li>
-            </ul>
-        </div>
-    </nav>
+
+    <header>
+        <h1>My Projects</h1>
+        <p><em>Programming projects showcasing my skills and learning</em></p>
+    </header>
+
+    <hr>
 
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>My Projects</h1>
-                <p class="header-subtitle">Programming projects showcasing my skills and learning</p>
-            </div>
+        <section class="project-card">
+            <iframe src="https://academy.cs.cmu.edu/sharing/slateGrayFrog277440/embed" title="CMU CS Academy"></iframe>
+            <button>Start Program</button>
+            
+            <h3>Project 1: Interactive Storytelling Program</h3>
+            <p><em>Python과 CMU Graphics를 활용하여 개발한 사용자 참여형 비주얼 스토리텔링 프로그램입니다. 이벤트 기반 프로그래밍(Event-driven programming)을 적용하여 사용자의 키보드 및 마우스 입력에 실시간으로 반응하는 동적 씬(Scene) 전환 체계를 구축하였으며, 코드 기반의 시각적 연출과 그래픽 효과를 실험적으로 구현했습니다.</em></p>
+            
+            <h4>TECHNOLOGIES</h4>
+            <span class="tech-tag">Python</span> 
+            <span class="tech-tag">CMU Graphics</span> 
+            <span class="tech-tag">Interactive Programming</span>
+            
+            <h4>KEY FEATURES</h4>
+            <ul>
+                <li>✓ Interactive user input handling</li>
+                <li>✓ Scene-based storytelling design</li>
+                <li>✓ Creative graphics and visual effects</li>
+                <li>✓ Real-time responses to user actions</li>
+            </ul>
+            
+            <h4>CHALLENGES & LESSONS</h4>
+            <p><em>This project helped me understand the fundamentals of interactive programming and how visual design can make code feel more engaging.</em></p>
+            <a href="https://academy.cs.cmu.edu/sharing/slateGrayFrog277440">View Project</a>
         </section>
 
-        <section class="projects-section">
-            <div class="container">
-                <div class="projects-grid">
+        <section class="project-card">
+            <h3>Project 2: Interactive Game Development</h3>
+            <p><em>컴퓨터 과학의 핵심 로직과 게임 메커니즘을 결합한 2D 인터랙티브 게임 프로젝트입니다. 실시간 플레이어 조작 핸들링, 정밀한 게임 상태 관리(Game State Management), 그리고 즉각적인 시각적 피드백 시스템을 설계하여 몰입감 높은 사용자 경험(UX)과 안정적인 게임 루프를 구현했습니다.</em></p>
+            
+            <h4>TECHNOLOGIES</h4>
+            <span class="tech-tag">Python</span> 
+            <span class="tech-tag">CMU Graphics</span> 
+            <span class="tech-tag">Game Programming</span>
+            
+            <h4>KEY FEATURES</h4>
+            <ul>
+                <li>✓ Interactive gameplay mechanics</li>
+                <li>✓ Player-controlled actions</li>
+                <li>✓ Visual feedback systems</li>
+                <li>✓ Game state management</li>
+            </ul>
+            
+            <h4>CHALLENGES & LESSONS</h4>
+            <p><em>Developing this project strengthened my problem-solving skills and helped me connect logic, design, and user experience.</em></p>
+            <a href="https://academy.cs.cmu.edu/sharing/antiqueWhiteGoldfish520677">View Project</a>
+        </section>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <iframe src="https://academy.cs.cmu.edu/sharing/slateGrayFrog277440/embed"></iframe>
-                        </div>
-                        <div class="project-content">
-                            <h3>Project 1: Interactive Storytelling Program</h3>
-                            <p class="project-description">
-                                My first CMU CS Academy project focused on creating an interactive story through graphics and user input. This project introduced me to event-driven programming and showed how code can be used as a creative medium.
-                            </p>
+        <section class="project-card">
+            <iframe src="https://academy.cs.cmu.edu/sharing/floralWhiteCow944491/embed" title="CMU CS Academy"></iframe>
+            <button>Start Program</button>
+            
+            <h3>Project 3: Interactive Art Studio</h3>
+            <p><em>예술적 창의성과 알고리즘적 설계를 융합한 디지털 아트 스튜디오 프로그램입니다. 커스텀 그래픽 요소를 정교하게 배치하고 애니메이션 및 모션 효과를 제어하는 프레임워크를 개발하여, 정적인 그래픽을 넘어 사용자의 상호작용에 따라 유기적으로 변하는 역동적인 시각 예술을 완성했습니다.</em></p>
+            
+            <h4>TECHNOLOGIES</h4>
+            <span class="tech-tag">Python</span> 
+            <span class="tech-tag">CMU Graphics</span> 
+            <span class="tech-tag">Graphics Programming</span>
+            
+            <h4>KEY FEATURES</h4>
+            <ul>
+                <li>✓ Interactive visual elements</li>
+                <li>✓ Custom graphic composition</li>
+                <li>✓ Animation and motion effects</li>
+                <li>✓ Real-time user interaction</li>
+            </ul>
+            
+            <h4>CHALLENGES & LESSONS</h4>
+            <p><em>This project helped me see how animation and interaction can transform static graphics into a dynamic experience.</em></p>
+            <a href="https://academy.cs.cmu.edu/sharing/floralWhiteCow944491">View Project</a>
+        </section>
 
-                            <h4>Technologies</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">CMU Graphics</span>
-                                <span class="tech-tag">Interactive Programming</span>
-                            </div>
-
-                            <h4>Key Features</h4>
-                            <ul class="feature-list">
-                                <li>Interactive user input handling</li>
-                                <li>Scene-based storytelling design</li>
-                                <li>Creative graphics and visual effects</li>
-                                <li>Real-time responses to user actions</li>
-                            </ul>
-
-                            <h4>Challenges & Lessons</h4>
-                            <p class="challenges-text">
-                                This project helped me understand the fundamentals of interactive programming and how visual design can make code feel more engaging.
-                            </p>
-
-                            <div class="project-links">
-                                <a href="https://academy.cs.cmu.edu/sharing/slateGrayFrog277440" class="link-btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <iframe src="https://academy.cs.cmu.edu/sharing/antiqueWhiteGoldfish520677/embed"></iframe>
-                        </div>
-                        <div class="project-content">
-                            <h3>Project 2: Interactive Game Development</h3>
-                            <p class="project-description">
-                                This project focuses on game mechanics, player interaction, and visual feedback. Through event handling and game logic, I learned how to create a more responsive user experience.
-                            </p>
-
-                            <h4>Technologies</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">CMU Graphics</span>
-                                <span class="tech-tag">Game Programming</span>
-                            </div>
-
-                            <h4>Key Features</h4>
-                            <ul class="feature-list">
-                                <li>Interactive gameplay mechanics</li>
-                                <li>Player-controlled actions</li>
-                                <li>Visual feedback systems</li>
-                                <li>Game state management</li>
-                            </ul>
-
-                            <h4>Challenges & Lessons</h4>
-                            <p class="challenges-text">
-                                Developing this project strengthened my problem-solving skills and helped me connect logic, design, and user experience.
-                            </p>
-
-                            <div class="project-links">
-                                <a href="https://academy.cs.cmu.edu/sharing/antiqueWhiteGoldfish520677" class="link-btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <iframe src="https://academy.cs.cmu.edu/sharing/floralWhiteCow944491/embed"></iframe>
-                        </div>
-                        <div class="project-content">
-                            <h3>Project 3: Interactive Art Studio</h3>
-                            <p class="project-description">
-                                An interactive graphics project that combines animation, custom artwork, and user interaction. This program connects my interest in art with programming.
-                            </p>
-
-                            <h4>Technologies</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">CMU Graphics</span>
-                                <span class="tech-tag">Graphics Programming</span>
-                            </div>
-
-                            <h4>Key Features</h4>
-                            <ul class="feature-list">
-                                <li>Interactive visual elements</li>
-                                <li>Custom graphic composition</li>
-                                <li>Animation and motion effects</li>
-                                <li>Real-time user interaction</li>
-                            </ul>
-
-                            <h4>Challenges & Lessons</h4>
-                            <p class="challenges-text">
-                                This project helped me see how animation and interaction can transform static graphics into a dynamic experience.
-                            </p>
-
-                            <div class="project-links">
-                                <a href="https://academy.cs.cmu.edu/sharing/floralWhiteCow944491" class="link-btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <iframe src="https://academy.cs.cmu.edu/sharing/brownLion991265/embed"></iframe>
-                        </div>
-                        <div class="project-content">
-                            <h3>Project 4: Creative Algorithm Visualization</h3>
-                            <p class="project-description">
-                                This project combines computational thinking with visual design by representing logical processes through graphics and animation.
-                            </p>
-
-                            <h4>Technologies</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">CMU Graphics</span>
-                                <span class="tech-tag">Algorithm Visualization</span>
-                            </div>
-
-                            <h4>Key Features</h4>
-                            <ul class="feature-list">
-                                <li>Visual representation of logical processes</li>
-                                <li>Interactive graphics and animation</li>
-                                <li>Algorithm-focused design</li>
-                                <li>Educational visualization techniques</li>
-                            </ul>
-
-                            <h4>Challenges & Lessons</h4>
-                            <p class="challenges-text">
-                                Through this project, I learned how programming concepts can be communicated visually and made easier to understand.
-                            </p>
-
-                            <div class="project-links">
-                                <a href="https://academy.cs.cmu.edu/sharing/brownLion991265" class="link-btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <section class="project-card">
+            <h3>Project 4: Creative Algorithm Visualization</h3>
+            <p><em>추상적인 컴퓨팅 사고력과 복잡한 알고리즘 로직을 시각적 데이터로 변환해주는 교육용 시각화 프로젝트입니다. 데이터 구조와 정렬/탐색 등의 논리적 프로세스를 실시간 그래픽 및 애니메이션 기법으로 표현하여, 기술적 개념을 직관적이고 이해하기 쉽게 전달하도록 설계했습니다.</em></p>
+            
+            <h4>TECHNOLOGIES</h4>
+            <span class="tech-tag">Python</span> 
+            <span class="tech-tag">CMU Graphics</span> 
+            <span class="tech-tag">Algorithm Visualization</span>
+            
+            <h4>KEY FEATURES</h4>
+            <ul>
+                <li>✓ Visual representation of logical processes</li>
+                <li>✓ Interactive graphics and animation</li>
+                <li>✓ Algorithm-focused design</li>
+                <li>✓ Educational visualization techniques</li>
+            </ul>
+            
+            <h4>CHALLENGES & LESSONS</h4>
+            <p><em>Through this project, I learned how programming concepts can be communicated visually and made easier to understand.</em></p>
+            <a href="https://academy.cs.cmu.edu/sharing/brownLion991265">View Project</a>
         </section>
     </main>
 
     <footer>
         <p>© 2026 My Portfolio. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
